@@ -6,7 +6,7 @@
 /*   By: gyasminalves <gyasminalves@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 16:07:25 by gyasminalve       #+#    #+#             */
-/*   Updated: 2025/10/29 19:27:02 by gyasminalve      ###   ########.fr       */
+/*   Updated: 2025/11/02 19:12:56 by gyasminalve      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ class Contact
         std::string nickname;
         std::string phoneNumber;
         std::string darkestSecret;
+
+        std::string readNonEmptyInput(const std::string& prompt);
         
     public:
     
@@ -42,6 +44,8 @@ class Contact
         std::string getNickname() const;
         std::string getPhoneNumber() const;
         std::string getDarkestSecret() const;
+
+        void    createContact();
 };
 
 #endif

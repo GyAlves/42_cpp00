@@ -6,7 +6,7 @@
 /*   By: gyasminalves <gyasminalves@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 19:03:22 by gyasminalve       #+#    #+#             */
-/*   Updated: 2025/10/29 19:27:44 by gyasminalve      ###   ########.fr       */
+/*   Updated: 2025/11/02 19:21:52 by gyasminalve      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,3 +76,26 @@ std::string Contact::getDarkestSecret() const
     return darkestSecret;
 }
 
+std::string Contact::readNonEmptyInput(const std::string& prompt)
+{
+    std::string input;
+    
+    while (true)
+    {
+        std::cout << prompt;
+        std::getline(std::cin, input);
+        if (!input.empty())
+            break;
+        std::cout << "Data cannot be empty. Please try again." << std::endl;
+    }
+    return input;
+}
+
+void    Contact::createContact()
+{
+    setFirstName(readNonEmptyInput("Enter First Name: "));
+    setLastName(readNonEmptyInput("Enter Last Name: "));
+    setNickname(readNonEmptyInput("Enter Nickname: "));
+    setPhoneNumber(readNonEmptyInput("Enter Phone Number: "));
+    setDarkestSecret(readNonEmptyInput("Enter Darkest Secret: "));
+}

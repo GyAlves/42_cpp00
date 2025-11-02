@@ -20,7 +20,9 @@ class PhoneBook
     private:
         Contact contacts[8];
         int     contactCount;
-        
+
+        std::string formatField(const std::string& field) const;
+
     public:
         PhoneBook();
         ~PhoneBook();
@@ -33,6 +35,7 @@ class PhoneBook
 
         void addContact(const Contact& contact);
         void displayContacts() const;
+        void displayContactDetails(int index) const;
 };
 
 #endif
