@@ -6,7 +6,7 @@
 /*   By: galves-a <galves-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 18:08:45 by galves-a          #+#    #+#             */
-/*   Updated: 2025/11/05 18:44:25 by galves-a         ###   ########.fr       */
+/*   Updated: 2025/11/05 20:15:08 by galves-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Weapon {
         
     public:
     
+        Weapon(std::string type);
         Weapon();
         ~Weapon();
 
