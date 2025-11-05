@@ -1,20 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FileManagement.cpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: galves-a <galves-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 18:05:39 by galves-a          #+#    #+#             */
-/*   Updated: 2025/11/05 19:26:53 by galves-a         ###   ########.fr       */
+/*   Created: 2025/11/05 19:51:33 by galves-a          #+#    #+#             */
+/*   Updated: 2025/11/05 20:09:54 by galves-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "headers/Weapon.hpp"
-#include "headers/HumanA.hpp"
-#include "headers/HumanB.hpp"
+#ifndef FILE_MANAGEMENT_HPP
+#define FILE_MANAGEMENT_HPP
 
-int main()
+#include <fstream>
+#include <string>
+#include <iostream>
+
+class FileManagement
 {
-    return (0);
+    private:
+        //
+    
+    public:
+    
+        FileManagement();
+        ~FileManagement();
+
+        // open file
+
+        // read file content
+
+        // write to file
+
+        // close file
+
+        // create file
+    
 }
+
+#endif
