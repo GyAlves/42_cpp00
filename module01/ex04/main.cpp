@@ -3,22 +3,43 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: galves-a <galves-a@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gyasminalves <gyasminalves@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 19:28:18 by galves-a          #+#    #+#             */
-/*   Updated: 2025/11/05 19:51:36 by galves-a         ###   ########.fr       */
+/*   Updated: 2025/11/06 03:02:38 by gyasminalve      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "headers/ValidateInput.hpp"
+#include "headers/FileReader.hpp"
+#include "headers/ReplaceContent.hpp"
+#include "headers/FileWriter.hpp"
+
 int main(int argc,  char *argv[])
 {
-    if (argc < 4)
+    std::string result;
+    std::string fileContent;
+    std::string filename;
+    std::string s1;
+    std::string s2;
+
+    if (!parseAndValidateArgs(argc, argv, filename, s1, s2))
+        return (1);
+        
+    fileContent = readFileContent(filename);
+    if (fileContent == "")
+        return (1);
+    
+    if (s2.empty())
     {
-        std::cout << " Missing Parameters. You should input these values: <filename> <string1> <string2>" << std::endl;
+        std::cout << "The replacement string is empty. No changes made to the file." << std::endl;
         return (0);
     }
-
-    // validate inputs
-
     
+    result = replaceContent(fileContent, s1, s2);
+
+    if (!writeFileContent(filename, result))
+        return (1);
+
+    return (0);
 }
