@@ -2,8 +2,8 @@ NAME	= ScavTrap
 CC		= c++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98
 
-SRCS = main.cpp source/ClapTrap.cpp
-HEADERS = headers/ClapTrap.hpp
+SRCS = main.cpp source/ClapTrap.cpp source/ScavTrap.cpp
+HEADERS = headers/ClapTrap.hpp headers/ScavTrap.hpp
 
 OBJ_DIR = obj
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
