@@ -6,7 +6,7 @@
 /*   By: gyasminalves <gyasminalves@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 16:37:46 by galves-a          #+#    #+#             */
-/*   Updated: 2025/11/10 17:29:45 by gyasminalve      ###   ########.fr       */
+/*   Updated: 2025/11/10 17:30:46 by gyasminalve      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int main()
         walkerCopy.attack("Daenerys Targaryen");
     }
 
-    printSeparator("TEST 4: Assignment Operator");
+    printSeparator("Assignment Operator Test");
     {
         ClapTrap robot1("Beta");
         ClapTrap robot2("Gamma");
