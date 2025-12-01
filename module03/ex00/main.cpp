@@ -6,7 +6,7 @@
 /*   By: gyasminalves <gyasminalves@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 16:37:46 by galves-a          #+#    #+#             */
-/*   Updated: 2025/11/10 17:30:46 by gyasminalve      ###   ########.fr       */
+/*   Updated: 2025/12/01 19:45:52 by gyasminalve      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ int main()
 
     printSeparator("Clappy Fight Simulation Test");
     {
-        ClapTrap fighter("ClappyIronFirst");
+        ClapTrap fighter("ClappyIronFist");
         std::cout << std::endl;
 
         fighter.attack("ZappySwasnson");
