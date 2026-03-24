@@ -9,12 +9,15 @@
 /*   Updated: 2025/11/12 01:40:00 by galves-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef BUREAUCRAT_HPP
 #define BUREAUCRAT_HPP
+
 #include <exception>
 #include <string>
 #include <iostream>
 #include <ostream>
+
 class AForm;
 class Bureaucrat {
     protected:

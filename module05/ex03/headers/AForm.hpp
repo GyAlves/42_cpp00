@@ -9,6 +9,7 @@
 /*   Updated: 2025/11/12 01:40:00 by galves-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef AFORM_HPP
 #define AFORM_HPP
 #include <exception>
