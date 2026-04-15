@@ -1,9 +1,8 @@
 NAME	= btc
 CC		= c++
-CFLAGS	= -Wall -Wextra -Werror -std=c++98
+CFLAGS	= -Wall -Wextra -Werror -std=c++98 -Iheaders
 
-SRCS = main.cpp \
-       BitcoinExchange.cpp
+SRCS = main.cpp sources/BitcoinExchange.cpp
 
 OBJ_DIR = obj
 OBJS = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRCS))
