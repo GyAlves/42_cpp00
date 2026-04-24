@@ -1,9 +1,10 @@
 NAME	= PmergeMe
 CC		= c++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98
+IFLAGS	= -I headers
 
 SRCS = main.cpp \
-       PmergeMe.cpp
+       sources/PmergeMe.cpp
 
 OBJ_DIR = obj
 OBJS = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRCS))
@@ -17,7 +18,7 @@ $(NAME): $(OBJS)
 
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
 
 clean:
 	$(RM) -r $(OBJ_DIR)
